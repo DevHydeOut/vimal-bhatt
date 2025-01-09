@@ -6,7 +6,6 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { slideUp } from './components/animation';
 import { motion } from 'framer-motion';
-import Marquee from './components/marques';
 
 export default function IntroMain() {
   const firstText = useRef(null);
@@ -93,9 +92,8 @@ export default function IntroMain() {
               priority={true}
             />
           </div>
-          <div data-scroll data-scroll-speed="0.7" className="">
-            <Marquee />
-          </div>
+          {/* <div data-scroll data-scroll-speed="0.7" className="">
+          </div> */}
         </div>
       </div>
     </motion.main>

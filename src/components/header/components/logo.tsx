@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import styles from './styles.module.css';
-import Magnetic from '@/common/Magnetic/index'
+import Magnetic from '@/common/Magnetic/magButton'
 
 export default function Logo() {
     return (

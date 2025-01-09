@@ -1,5 +1,5 @@
 import React from 'react'
-import Magnetic from '@/common/Magnetic/index'
+import Magnetic from '@/common/Magnetic/magButton'
 import Logo from "./components/logo"
 import Link from 'next/link'
 
