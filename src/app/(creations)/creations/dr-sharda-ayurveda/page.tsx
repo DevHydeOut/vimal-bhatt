@@ -8,6 +8,7 @@ import ImageCard from '@/components/workCompo/imgCard'
 import List from '@/components/workCompo/list'
 
 import styles from './styles.module.scss';
+import ImgSlider from '@/components/imgSlider/imgSlider';
 
 export default function DrShardaPage(){
 
@@ -21,7 +22,7 @@ export default function DrShardaPage(){
 
     return(
         <div ref={container} className={styles.slidingImages}>
-            <main className="mt-[10vw] mb-[5vh] flex justify-center items-center overflow-y-auto">
+            <main className="mt-[10vw] mb-[5vh] flex flex-col justify-center items-center overflow-y-auto">
                 <div className="w-[1200px] flex flex-col">
                     <div className="flex flex-col justify-center">
                         <H1Card
@@ -76,8 +77,17 @@ export default function DrShardaPage(){
                             H2="Project Status"
                             Para="As this website serves as an upgrade project from DrShardaayurveda.com, it is still in the process of development and refinement. While significant strides have been made in terms of UX enhancements, on-page SEO optimization, and development contributions, further iterations and adjustments may be required to achieve the desired outcome."
                         />
+
                     </div>
                 </div>
+
+                <ImgSlider 
+                    imageUrl='/images/bg2.png'
+                    className=''
+                    altText='background'
+                    alttitle='background'
+                />
+                
             </main>
             <motion.div style={{height}} className={styles.circleContainer}>
                 <div className={styles.circle}></div>
